@@ -1,0 +1,20 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  # source_URL: https://drive.google.com/file/d/1P9SblSAm-PErBUgd1v1TMbxgRwOpUJIt/view?usp=drive_link
+  source_URL: https://drive.google.com/file/d/1hqNTBWH2R9ga1NE9FlK3JDVGYKHwSjC-/view?usp=sharing
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion/data
+
+training:
+    root_dir: artifacts/training
+    output_dir: artifacts/training
+    trained_model_path: artifacts/training/trained/model.h5
+
+
+model_evaluation:
+    root_dir: artifacts/training
+    MLFLOW_TRACKING_URI: https://dagshub.com/girishSaiWork/E2E_Deep_Learning_Project_Kidney_Disease_Classifier.mlflow
+    MLFLOW_TRACKING_USERNAME: girishSaiWork
+    MLFLOW_TRACKING_PASSWORD: 069a4dd67a4255235d6151e96526830768fc5a80
